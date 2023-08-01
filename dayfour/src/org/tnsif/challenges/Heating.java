@@ -11,7 +11,43 @@ public class Heating {
 	
 	
 	
+	
 	public static void main(String[] args) {
+		
+		/* Scanner s = new Scanner(System.in);
+
+	        System.out.print("Enter the number of items to heat: ");
+	        int items = s.nextInt();
+
+	        System.out.print("Enter the initial heating time: ");
+	        float ht = s.nextFloat();
+
+	       
+	   	        switch (items) {
+	            case 1:
+	                System.out.println(ht);
+	                break;
+	            case 2:
+	                System.out.println((ht/2)+ht);
+	                break;
+	            case 3:
+	            	System.out.println(2*ht);
+	            default:
+	                System.out.println("Heating more than 3 items at once is not recommended.");
+	        }
+
+	       
+	    }
+	
+
+
+	}
+		 * 
+		 * 
+		 * 
+		 * 
+		 * */
+		
 		
 		 Scanner input = new Scanner(System.in);
 

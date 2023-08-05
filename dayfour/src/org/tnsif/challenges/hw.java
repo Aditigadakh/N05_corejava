@@ -18,71 +18,40 @@ public class hw {
 		
 		
 		
-			/*Scanner s=new Scanner(System.in);
-			int month=s.nextInt();
-			int rent=s.nextInt();
-			int day=s.nextInt();
-			switch(month)
-			{
-			  case 4:
-				 
-			  case 5:
-				 
-			  case 6:	  
-				 
-			 break;
-			double  rent1 = (rent*1.12);
-			return rent1;
-				
-			}*/
-
-		      Scanner s = new Scanner(System.in);
+		
+		        Scanner scanner = new Scanner(System.in);
 
 		        System.out.print("Enter the month (1-12): ");
-		        int month = s.nextInt();
+		        int month = scanner.nextInt();
 
 		        System.out.print("Enter the room rent per day: ");
-		        double rent = s.nextDouble();
+		        double roomRent = scanner.nextDouble();
 
 		        System.out.print("Enter the number of days of stay: ");
-		        int days = s.nextInt();
+		        int days = scanner.nextInt();
 
-		        
-		    }
-
-		    
+		        double totalAmount = roomRent * days;
 
 		        switch (month) {
-		            case 4:
-		            case 5:
-		            case 6:
-		            case 11:
-		            case 12:
-		            	 System.out.println((rent+(rent*0.2))*days);
-		                break:
-		                System.out.println((rent+(rent*0.2))*days);
-		                
-		            case 1:
-		            case 2:
-		            case 3:
-		            case 7:
-		            case 8:
-		            case 9:
-		            case 10:
-		            	 System.out.println((rent*days);
-		            	 break;
-		            	 System.out.println("invalid");
-		            	
-		                
+		            case 4: // April
+		            case 5: // May
+		            case 6: // June
+		            case 11: // November
+		            case 12: // December
+		                double peakSeasonSurcharge = totalAmount * 0.12;
+		                totalAmount += peakSeasonSurcharge;
+		                System.out.println("Peak season : RS " + peakSeasonSurcharge);
+		                break;
+		            default:
+		                System.out.println("No peak season .");
 		        }
-		        
-		       
 
-		       
+		        System.out.println("Total hotel budget: RS " + totalAmount);
+
+		        scanner.close();
 		    }
+		}
+
 		
-
-
-	}
-
-	}
+		
+	
